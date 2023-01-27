@@ -2,7 +2,7 @@
 длина которых меньше либо равна 3 символа. Первоначальный массив можно ввести с клавиатуры, 
 либо задать на старте выполнения алгоритма.*/
 
-
+//Метод проверяет длину элемента массива и если она <=3, записывает элемент в новый массив
 void ShortArray(string[] array, string[] newArray)
 {
     int count = 0;
@@ -15,6 +15,8 @@ void ShortArray(string[] array, string[] newArray)
         }
     }
 }
+
+//Метод печати массива
 void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -23,6 +25,8 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
+
+
 string[] array = new string[4] {"hello", "2", "world", ":-)"};
 string[] newArray = new string[array.Length];
 ShortArray(array, newArray);
